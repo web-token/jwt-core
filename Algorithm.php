@@ -14,14 +14,17 @@ declare(strict_types=1);
 namespace Jose\Component\Core;
 
 /**
- * Interface JWTInterface.
+ * Interface Algorithm.
  */
-interface JWTInterface
+interface Algorithm
 {
     /**
-     * Returns the payload of the JWT.
-     *
-     * @return string|null
+     * @return string Returns the name of the algorithm
      */
-    public function getPayload(): ?string;
+    public function name(): string;
+
+    /**
+     * @return array[] Returns the key types suitable for this algorithm
+     */
+    public function allowedKeyTypes(): array;
 }
