@@ -24,7 +24,7 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "brick/math": "^0.9",
-        "fgrosse/phpasn1": "^2.0",
+        "genkgo/php-asn1": "^2.0",
         "paragonie/constant_time_encoding": "^2.4"
     },
     "conflict": {
